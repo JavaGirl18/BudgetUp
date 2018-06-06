@@ -7,7 +7,7 @@ const finGoalSchema = new Schema({
     currentAmount: Number,
     dueDate: Date,
     budgetBar: Number
-    //will embed budget and fin goals 
+    //will embed comments
 })
 
 module.exports = finGoalSchema
