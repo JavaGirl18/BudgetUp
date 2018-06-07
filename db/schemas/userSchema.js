@@ -1,7 +1,7 @@
 
 const Schema = require('mongoose').Schema
 const commentSchema = require('./budgetSchema')
-const commentSchema = require('./finGoalSchema')
+const commentSchema = require('./finGoalsSchema')
 
 const userSchema = new Schema({
     name: String,
@@ -9,7 +9,7 @@ const userSchema = new Schema({
     password: String,
     pic: Number,
     budget: [budgetSchema],
-    financialGoals: [finGoalSchema] 
+    financialGoals: [finGoalsSchema] 
 })
 
 module.exports = userSchema

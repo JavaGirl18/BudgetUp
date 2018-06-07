@@ -1,8 +1,8 @@
 
 const Schema = require('mongoose').Schema
-const commentSchema = require('./commentSchema')
+const finGoalsSchema = require('./finGoalsSchema')
 
-const finGoalSchema = new Schema({
+const finGoalsSchema = new Schema({
     name: String,
     goalAmount: Number,
     currentAmount: Number,
@@ -11,4 +11,4 @@ const finGoalSchema = new Schema({
     //will embed comments
 })
 
-module.exports = finGoalSchema
+module.exports = finGoalsSchema
