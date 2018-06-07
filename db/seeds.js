@@ -88,19 +88,18 @@ User.remove()
             financialGoals: [finGoals2]
         })
 
-    
+        const users = [user1, user2]
 
-const users = [user1, user2]
 
-    
-
-// save test data
-return User.insertMany(users)
-})
-    .then(() => {
-        console.log("database created!")
-        // close the database
-        mongoose.connection.close()
+        // save test data
+        return User.insertMany(users)
     })
+            .then(() => {
+                console.log("database created!")
+                // close the database
+                mongoose.connection.close()
+            }).catch((err) => {
+                console.log('ERROR', err)
+            })
 
     
