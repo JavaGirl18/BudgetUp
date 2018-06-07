@@ -1,5 +1,6 @@
 
 const Schema = require('mongoose').Schema
+const commentSchema = require('./commentSchema')
 
 const finGoalSchema = new Schema({
     name: String,
