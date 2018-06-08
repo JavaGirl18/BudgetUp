@@ -14,10 +14,10 @@ router.get('/', (req, res, next) => {
 
 })
 
-// // NEW Route
-// router.get('/new', (req, res) => {
-//   res.render('homework/new')
-// })
+// NEW Route
+router.get('/new', (req, res) => {
+  res.render('users/new')
+})
 
 // // CREATE Route
 // router.post('/', (req, res) => {
