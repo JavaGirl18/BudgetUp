@@ -19,6 +19,7 @@ router.get('/new', (req, res) => {
   res.render('users/new')
 })
 
+
 // // CREATE Route
 // router.post('/', (req, res) => {
 //   const newHomework = req.body
