@@ -18,4 +18,9 @@ router.get('/', (req, res, next) => {
 
 })
 
+// NEW Route
+router.get('/new', (req, res) => {
+    res.render('budget/new')
+  })
+
 module.exports = router
