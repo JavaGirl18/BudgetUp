@@ -1,9 +1,9 @@
-<h1>Name: {{showUser.name}}</h1>
-<h3>Email: {{showUser.email}}</h3>
-<p>Description: {{showUser.}}</p>
-<p>Subject: {{homeworkAssignment.subject}}</p>
-<p>Created By: {{homeworkAssignment.createdBy}}</p>
+<img src={{showUser.pic}} alt={{this.name}} width='200'>
+<h3>Name: {{showUser.name}}</h3>
+<p>Email: {{showUser.email}}</p>
+<p>Go to Budget: {{showUser.budget}}</p>
+<p>Go to Financial Goals: {{showUser.financialGoals}}</p>
 
-<form action="/homework/{{homeworkAssignment._id}}?_method=DELETE" method="POST">
-  <button type="submit">Delete Homework</button>
+<form action="/users/{{showUser._id}}?_method=DELETE" method="POST">
+  <button type="submit">Delete Profile</button>
 </form>
