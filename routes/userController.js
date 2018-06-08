@@ -48,20 +48,20 @@ router.get('/:id/edit', (req, res) => {
     })
 })
 
-// // UPDATE Route
-// router.put('/:id', (req, res) => {
-//   Homework.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
-//     res.redirect(`/homework/${req.params.id}`)
-//   })
-// })
+// UPDATE Route
+router.put('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
+    res.redirect(`/users/${req.params.id}`)
+  })
+})
 
-// // DELETE Route
-// router.delete('/:id', (req, res) => {
-//   Homework.findByIdAndRemove(req.params.id)
-//     .then(() => {
-//       console.log('Successfully Delete ')
-//       res.redirect('/homework')
-//     })
-// })
+// DELETE Route
+router.delete('/:id', (req, res) => {
+  User.findByIdAndRemove(req.params.id)
+    .then(() => {
+      console.log('Successfully Deleted User Profile ')
+      res.redirect('/users')
+    })
+})
 
 module.exports = router

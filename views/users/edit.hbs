@@ -1,28 +1,22 @@
 <h1>Edit {{showUser.name}}</h1>
 
 <form action="/users/{{showUser._id}}?_method=PUT" method="POST">
+<div>
+    <label for="pic">Change profile picture</label>
+    <input type="text" name="pic" value='{{showUser.pic}}'>
+</div>
   <div>
-    <label for="title">User</label>
+    <label for="title">Update User Name</label>
     <input type="text" name="title" value={{showUser.name}} />
   </div>
   <div>
-    <label for="description">Homework Description</label>
-    <textarea 
-    type="text" 
-    name="description" 
-    >{{homeworkAssignment.description}}</textarea>
+    <label for="email">Update Email</label>
+    <input type="text" name="email" value={{showUser.email}} />
   </div>
   <div>
-    <label for="subject">Homework subject</label>
-    <input type="text" name="subject" value={{homeworkAssignment.subject}} />
+    <label for="password">Change Password</label>
+    <input type="text" name="password" value={{showUser.password}} />
   </div>
   <div>
-    <label for="createdBy">Homework createdBy</label>
-    <input type="text" name="createdBy" value={{homeworkAssignment.createdBy}} />
-  </div>
-  <div>
-    <label for="dueDate">Homework dueDate</label>
-    <input type="date" name="dueDate" value={{homeworkAssignment.dueDate}} />
-  </div>
-  <button type="submit">Update</button>
+  <button type="submit">Update Profile</button>
 </form>
