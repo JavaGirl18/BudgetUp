@@ -39,14 +39,14 @@ router.get('/:id', (req, res) => {
     })
 })
 
-// // EDIT Route
-// router.get('/:id/edit', (req, res) => {
-//   Homework
-//     .findById(req.params.id)
-//     .then((banana) => {
-//       res.render('homework/edit', { homeworkAssignment: banana })
-//     })
-// })
+// EDIT Route
+router.get('/:id/edit', (req, res) => {
+  User
+    .findById(req.params.id)
+    .then((showUser) => {
+      res.render('users/edit', { showUser })
+    })
+})
 
 // // UPDATE Route
 // router.put('/:id', (req, res) => {

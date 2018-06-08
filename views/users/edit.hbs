@@ -1,0 +1,28 @@
+<h1>Edit {{showUser.name}}</h1>
+
+<form action="/users/{{showUser._id}}?_method=PUT" method="POST">
+  <div>
+    <label for="title">User</label>
+    <input type="text" name="title" value={{showUser.name}} />
+  </div>
+  <div>
+    <label for="description">Homework Description</label>
+    <textarea 
+    type="text" 
+    name="description" 
+    >{{homeworkAssignment.description}}</textarea>
+  </div>
+  <div>
+    <label for="subject">Homework subject</label>
+    <input type="text" name="subject" value={{homeworkAssignment.subject}} />
+  </div>
+  <div>
+    <label for="createdBy">Homework createdBy</label>
+    <input type="text" name="createdBy" value={{homeworkAssignment.createdBy}} />
+  </div>
+  <div>
+    <label for="dueDate">Homework dueDate</label>
+    <input type="date" name="dueDate" value={{homeworkAssignment.dueDate}} />
+  </div>
+  <button type="submit">Update</button>
+</form>

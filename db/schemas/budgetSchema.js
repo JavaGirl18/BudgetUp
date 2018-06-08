@@ -10,7 +10,7 @@ const budgetSchema = new Schema({
         amount: Number
     },
     income: {
-        type: String,
+        incomeType: String,
         amount: Number
         //misc?
     }

@@ -45,8 +45,8 @@ User.remove()
                 amount: 350,
             },
             income: {
-                type: "Code Project",
-                amount: 700,
+                incomeType: "Code Project",
+                amount: 700
                 //misc?
             }
         })
@@ -61,8 +61,8 @@ User.remove()
                 amount: 350,
             },
             income: {
-                type: "Yard work",
-                amount: 100,
+                incomeType: "Yard work",
+                amount: 100
                 //misc?
             }
         })
@@ -77,8 +77,8 @@ User.remove()
                 amount: 350,
             },
             income: {
-                type: "Child support",
-                amount: 700,
+                incomeType: "Child support",
+                amount: 700
                 //misc?
             }
         })
