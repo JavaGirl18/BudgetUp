@@ -2,7 +2,7 @@
 <h3>Name: {{showUser.name}}</h3>
 <p>Email: {{showUser.email}}</p>
  <a href="/users/{{showUser._id}}/budget">Go to Budget</a>
-<p>Go to Financial Goals: {{showUser.financialGoals}}</p>
+ <a href="/users/{{showUser._id}}/finGoals">Go to Financial Goals</a>
 
 <form action="/users/{{showUser._id}}?_method=DELETE" method="POST">
   <button type="submit">Delete Profile</button>
