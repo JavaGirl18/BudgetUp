@@ -30,14 +30,14 @@ router.post('/', (req, res) => {
     })
 })
 
-// // SHOW Route
-// router.get('/:id', (req, res) => {
-//   Homework
-//     .findById(req.params.id)
-//     .then((homeworkAssignment) => {
-//       res.render('homework/show', { homeworkAssignment })
-//     })
-// })
+// SHOW Route
+router.get('/:id', (req, res) => {
+  User
+    .findById(req.params.id)
+    .then((showUser) => {
+      res.render('users/show', {showUser})
+    })
+})
 
 // // EDIT Route
 // router.get('/:id/edit', (req, res) => {

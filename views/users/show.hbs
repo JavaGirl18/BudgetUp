@@ -1,0 +1,9 @@
+<h1>Name: {{showUser.name}}</h1>
+<h3>Email: {{showUser.email}}</h3>
+<p>Description: {{showUser.}}</p>
+<p>Subject: {{homeworkAssignment.subject}}</p>
+<p>Created By: {{homeworkAssignment.createdBy}}</p>
+
+<form action="/homework/{{homeworkAssignment._id}}?_method=DELETE" method="POST">
+  <button type="submit">Delete Homework</button>
+</form>
