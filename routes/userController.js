@@ -20,15 +20,15 @@ router.get('/new', (req, res) => {
 })
 
 
-// // CREATE Route
-// router.post('/', (req, res) => {
-//   const newHomework = req.body
-//   Homework
-//     .create(newHomework)
-//     .then(() => {
-//       res.redirect('/homework')
-//     })
-// })
+// CREATE Route
+router.post('/', (req, res) => {
+  const newUser = req.body
+  User
+    .create(newUser)
+    .then(() => {
+      res.redirect('users/')
+    })
+})
 
 // // SHOW Route
 // router.get('/:id', (req, res) => {
