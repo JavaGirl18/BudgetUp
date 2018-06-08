@@ -1,7 +1,7 @@
 <img src={{showUser.pic}} alt={{showUser.name}} width='200'>
 <h3>Name: {{showUser.name}}</h3>
 <p>Email: {{showUser.email}}</p>
-<p>Go to Budget: {{showUser.budget}}</p>
+ <a href="/users/{{showUser._id}}/budget">Go to Budget</a>
 <p>Go to Financial Goals: {{showUser.financialGoals}}</p>
 
 <form action="/users/{{showUser._id}}?_method=DELETE" method="POST">

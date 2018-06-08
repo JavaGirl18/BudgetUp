@@ -2,6 +2,9 @@
 const Schema = require('mongoose').Schema
 
 const budgetSchema = new Schema({
+    budgetName:{
+        name: String,
+    },
     expenses: {
         name: String,
         amount: Number
@@ -11,6 +14,7 @@ const budgetSchema = new Schema({
         amount: Number
         //misc?
     }
+
 })
 
 module.exports = budgetSchema

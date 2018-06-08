@@ -1,0 +1,24 @@
+<h1>Create New Budget</h1>
+
+<form action="/budget" method="POST">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="User Name" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <textarea 
+    type="text" 
+    name="email" 
+    placeholder="Email"></textarea>
+  </div>
+  <div>
+    <label for="password">Create Password</label>
+    <input type="password" name="password" placeholder="Password" />
+  </div>
+  <div>
+    <label for="pic">Upload picture</label>
+    <input type="file" name="pic" accept="image/*">
+  </div>
+  <button type="submit">Create Profile</button>
+</form>

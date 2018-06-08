@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', userController);
+app.use('/users/:userId/budget', budgetController);
 
 
 // catch 404 and forward to error handler

@@ -21,6 +21,9 @@ User.remove()
     .then(() => {
 
         const budget1 = new Budget({
+            budgetName:{
+                name: "House Budget"
+            },
             expenses: {
                 name: "Rent",
                 amount: 1200,
@@ -34,6 +37,9 @@ User.remove()
 
 
         const budget2 = new Budget({
+            budgetName:{
+                name: "Misc Budget"
+            },
             expenses: {
                 name: "Car note",
                 amount: 350,
@@ -47,6 +53,9 @@ User.remove()
 
 
         const budget3 = new Budget({
+            budgetName:{
+                name: "My Budget"
+            },
             expenses: {
                 name: "DayCare",
                 amount: 350,
@@ -60,6 +69,9 @@ User.remove()
 
 
         const budget4 = new Budget({
+            budgetName:{
+                name: "Her Budget"
+            },
             expenses: {
                 name: "Car insurance",
                 amount: 350,
