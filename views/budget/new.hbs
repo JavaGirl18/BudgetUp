@@ -1,18 +1,27 @@
 <h1>Create New Budget</h1>
 
-<form action="/users{{userId}}/budget" method="POST">
+<form action="/users/{{userId}}/budget" method="POST">
   <div>
-    <label for="budgetName">Name your Budget</label>
-    <input type="text" name="budgetName" placeholder="Budget Name" />
+    <label for="budgetName.name">Name your Budget</label>
+    <input type="text" name="budgetName.name" placeholder="Budget Name" />
   </div>
   <div>
     <label for="expenses">Type of Expense</label>
- <input type="text" name="expenses" placeholder="enter name of expense" />
+ <input type="text" name="expenses.name" placeholder="enter name of expense" />
   </div>
   <div>
     <label for="amount">Amount of Expense</label>
-    <input type="number" name="amount" placeholder="Enter amount of expense" />
+    <input type="number" name="expenses.amount" placeholder="Enter amount of expense" />
   </div>
+    <div>
+    <label for="incomeType">Income Stream</label>
+    <input type="text" name="income.incomeType" placeholder="Enter amount of expense" />
+  </div>
+    <div>
+    <label for="amount">Amount of Income Stream</label>
+    <input type="number" name="income.amount" placeholder="Enter amount of expense" />
+  </div>
+  
   <button type="submit">Create New Budget</button>
 </form>
   

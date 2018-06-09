@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
     console.log('im here')
     User.findById(req.params.userId)
     .then((user) => {
-      console.log(user)
+      // console.log(user)
         
       res.render('budget/index', 
       { user: user,
@@ -30,25 +30,25 @@ router.get('/new', (req, res) => {
 
 // CREATE Route
 router.post('/', (req, res) => {
-
+console.log('trying to create')
   // make budget req.body
   const budget = new Budget(req.body)
 
   // get budget by the id
   User.findById(req.params.userId)
-    .then((newBudget) => {
-
+    .then((user) => {
+console.log(user)
 
       // push new budget into budget
-      newBudget.budget.push(budget)
-console.log(userId)
+      user.budget.push(budget)
+console.log(budget)
       // save new budget
-      return newBudget.save()
+      return user.save()
     })
     .then(() => {
 
       // redirect to budget page
-      res.redirect(`user/${req.params.userId}/budget`)
+      res.redirect(`/users/${req.params.userId}/budget`)
     })
 })
 
