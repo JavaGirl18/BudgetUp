@@ -52,7 +52,19 @@ console.log(budget)
     })
 })
 
-
+// DELETE Route
+router.delete('/:id', (req, res) => {
+  console.log(req.params.userId)
+  //find user by id using the req params
+  User.findById(req.params.userId)
+    .then((user) => {
+      console.log(user)
+      user.budget.id(req.params.id).remove()
+      return user.save()
+    })
+    .then(() => res.redirect(`/users/${req.params.userId}/budget`))
+    .catch(err => console.log(err))
+})
 
 // router.put('/:id', (req,res)=>{
 //  User

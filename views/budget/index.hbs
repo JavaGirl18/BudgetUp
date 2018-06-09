@@ -10,9 +10,13 @@
        
         </a>
     </li>
+    <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
+   <button type='submit'>Remove Budget</button></a>
     {{/each}}
+    </form>
 </ul>
 
 <a href="budget/new"><button>Add new budget</button></a>
+
 
    
