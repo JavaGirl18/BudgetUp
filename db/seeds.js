@@ -29,7 +29,7 @@ User.remove()
                 amount: 1200,
             },
             income: {
-                type: "Job",
+                incomeType: "Job",
                 amount: 3700
                 //misc?
             }

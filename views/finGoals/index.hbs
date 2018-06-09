@@ -1,0 +1,16 @@
+<h1>{{user.name}}'s Financial Goals</h1>
+{{budget}}
+<ul>
+    {{#each finGoals}}
+    <li>
+        <h2>{{budgetName.name}}</h2>
+        <p>{{expenses.name}} : {{expenses.amount}}</p>
+        
+        <p>{{income.incomeType}} : {{income.amount}}</p>
+       
+        </a>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="budget/new"><button>Add new budget</button></a>
