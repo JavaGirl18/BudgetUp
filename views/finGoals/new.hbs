@@ -1,0 +1,35 @@
+<h1>Create New Financial Goal</h1>
+
+<form action="/users/{{userId}}/finGoals" method="POST">
+  <div>
+    <label for="name">Name your Financial Goal</label>
+    <input type="text" name="name" placeholder="Goal name" />
+  </div>
+  <div>
+    <label for="amount">Goal Amount</label>
+ <input type="text" name="goalAmount" placeholder="amount of goal" />
+  </div>
+  <div>
+    <label for="currentAmount">Current Amount</label>
+    <input type="number" name="currentAmount" placeholder="current amount" />
+  </div>
+    <div>
+    <label for="dueDate">Set Due Date</label>
+    <input type="text" name="dueDate" placeholder="Enter due date" />
+  </div>
+    <div>
+    <label for="amount">Add Comments</label>
+    <textarea 
+    type="text" 
+    name="comment" 
+    placeholder="comments"></textarea> 
+  </div>
+  
+  <button type="submit">Create New Financial Goal</button>
+</form>
+  
+  
+  {{!-- <textarea 
+    type="text" 
+    name="email" 
+    placeholder="Email"></textarea> --}}

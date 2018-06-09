@@ -2,3 +2,20 @@
 <p>Welcome to {{title}}</p>
 
 
+<h1>Already a User?</h1>
+<form>
+    <div>
+        <label for="login">Email</label>
+        <input type="text" placeholder="email address" />
+    </div>
+    <div>
+        <label for="userPassword">Password: </label>
+<input id="userPassword" type="password" required>
+<input type="submit" value="Submit">
+    </div>
+</form>
+
+<form action="/users/new">
+    <h1>New User?</h1>
+    <a href="/users"><button type='submit'>Create New Account</button></a>
+</form>

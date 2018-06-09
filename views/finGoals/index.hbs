@@ -1,16 +1,17 @@
 <h1>{{user.name}}'s Financial Goals</h1>
-{{budget}}
+{{goals}}
 <ul>
-    {{#each finGoals}}
+    {{#each goals}}
     <li>
-        <h2>{{budgetName.name}}</h2>
-        <p>{{expenses.name}} : {{expenses.amount}}</p>
+        <h2>{{name}}</h2>
+        <p>{{goalAmount}} : {{currentAmount}}</p>
         
-        <p>{{income.incomeType}} : {{income.amount}}</p>
+        <p>{{dueDate}}</p>
+        <p>{{comment}}</p>
        
         </a>
     </li>
     {{/each}}
 </ul>
 
-<a href="budget/new"><button>Add new budget</button></a>
+<a href="finGoals/new"><button>Add new Financial Goal</button></a>
