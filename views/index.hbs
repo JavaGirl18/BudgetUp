@@ -1,28 +1,21 @@
-
 <div class='main'>
-   
-    <center>
-        <h1 class='shade'>
-            <u>BudgetUp!</u>
-            
-        </h1>
-    </center>
+
     <center>
         <h4 class='welcome'>Welcome to {{title}}</h4>
     </center>
 
     <div class='form'>
         <h1>Already a User?</h1>
-   
-    <form action='/users/'>
-        <label for="login">Email</label>
-        <input type="text" placeholder="email address" />
-        <label for="userPassword">Password: </label>
-        <input id="userPassword" type="password" required>
-        <button type="submit">Submit</button>
 
-    </form>
-</div>
+        <form action='/users/'>
+            <label for="login">Email</label>
+            <input type="text" placeholder="email address" />
+            <label for="userPassword">Password: </label>
+            <input id="userPassword" type="password" required>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
     <form action="/users/new">
         <h1>New User?</h1>
         <a href="/users/new">
@@ -30,3 +23,7 @@
         </a>
     </form>
 </div>
+ <script>
+        const sideNav= document.querySelector('.sidenav');
+Map.SideNav.init(sideNav, {});
+      </script>

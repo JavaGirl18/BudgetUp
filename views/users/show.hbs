@@ -1,4 +1,10 @@
-<img src={{showUser.pic}} alt={{showUser.name}} width='200'>
+<div class ='showUserBack'>
+  <header class='header'>
+
+</header>
+<body>
+  <div class='body'>
+<img src={{showUser.pic}} alt={{showUser.name}}>
 <h3>Name: {{showUser.name}}</h3>
 <p>Email: {{showUser.email}}</p>
  <a href="/users/{{showUser._id}}/budget">Go to Budget</a>
@@ -10,3 +16,7 @@
 
 
   <a href="{{showUser._id}}/edit"><button>Update User Profile</button></a>
+  </div>
+  </body>
+  <a href="/"><button>Sign Out</button></a>
+</div>
