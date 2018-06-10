@@ -1,11 +1,31 @@
-<div class='main'>
+<div class='right' id='already'>
+<h4><u>Already a User?</u></h4>
 
-    <center>
-        <h4 class='welcome'>Welcome to {{title}}</h4>
-    </center>
+  <div class="row">
+    <form action='/users/' class="col s12">
+      <div class="row">
+        <div class="input-field col s10">
+            <i class=" small material-icons prefix">account_circle</i>
+          <input id="email" type="email" class="validate">
+          <label for="email">User Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s10">
+            <i class="small material-icons prefix">https</i>
+          <input id="password" type="password" required>
+          <label for="password">Password</label>
+        </div>
+      </div>
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+  </div>
+  </div>
 
-    <div class='form'>
-        <h1>Already a User?</h1>
+    {{!-- <div class='container'>
+        
 
         <form action='/users/'>
             <label for="login">Email</label>
@@ -15,15 +35,12 @@
             <button type="submit">Submit</button>
 
         </form>
-    </div>
+    </div> --}}
+    <div class='left' id='new'>
     <form action="/users/new">
-        <h1>New User?</h1>
-        <a href="/users/new">
-            <button type='submit'>Create New Account</button>
+        <h4><u>New User?</u></h4>
+        <h6>Create new Profile</h6>
+        <a href="/users/new" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
         </a>
     </form>
 </div>
- <script>
-        const sideNav= document.querySelector('.sidenav');
-Map.SideNav.init(sideNav, {});
-      </script>
