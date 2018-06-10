@@ -1,26 +1,38 @@
-<
-<h1>Create New Profile</h1>
+<div class='left' id='already'>
+<h4><u>Create New Profile</u></h4>
 
-<form action="/users{{user}}" method="POST">
-  <div>
-    <label for="name">Name</label>
+  <div class="row">
+    <form action="/users{{user}}" method="POST" class="col s8">
+      <div class="row">
+        <div class="input-field col s10">
+            <i class=" small material-icons prefix">account_circle</i>
+         <label for="name">Name</label>
     <input type="text" name="name" placeholder="User Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s10">
+          <input id="email" type="text" name='email' required>
+          <label for="email">Enter your Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s10">
+          <input id="password" type="password" name='password' placeholder="Password" required>
+          <label for="password">Create a password</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s10">
+          <input id="pic" type="text" name="pic" placeholder="image url">
+          <label for="pic">Upload Profile Picture</label>
+        </div>
+      </div>
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
   </div>
-  <div>
-    <label for="email">Email</label>
-    <textarea 
-    type="text" 
-    name="email" 
-    placeholder="Email"></textarea>
-  </div>
-  <div>
-    <label for="password">Create Password</label>
-    <input type="password" name="password" placeholder="Password" />
-  </div>
-  <div>
-    <label for="pic">Upload picture</label>
-    <input type="text" name="pic" value="image/*">
-  </div>
- <button type='submit' class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+
+
   
-</form>
