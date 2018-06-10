@@ -6,7 +6,7 @@ const mongoose = require ('mongoose')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'BudgetUp!' });
+  res.render('index', { title: 'an easier way to UP your finances!' });
 });
 
 module.exports = router;

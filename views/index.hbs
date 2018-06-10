@@ -1,21 +1,31 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class='main'>
+    <center>
+        <h1>
+            <u>BudgetUp!</u>
+        </h1>
+    </center>
+    <center>
+        <p>Welcome to {{title}}</p>
+    </center>
 
-
-<h1>Already a User?</h1>
-<form>
     <div>
+        <h1>Already a User?</h1>
+    </div>
+    <form>
+
+
         <label for="login">Email</label>
         <input type="text" placeholder="email address" />
-    </div>
-    <div>
         <label for="userPassword">Password: </label>
-<input id="userPassword" type="password" required>
-<input type="submit" value="Submit">
-    </div>
-</form>
+        <input id="userPassword" type="password" required>
+        <input type="submit" value="Submit">
 
-<form action="/users/new">
-    <h1>New User?</h1>
-    <a href="/users"><button type='submit'>Create New Account</button></a>
-</form>
+    </form>
+</div>
+    <form action="/users/new">
+        <h1>New User?</h1>
+        <a href="/users/new">
+            <button type='submit'>Create New Account</button>
+        </a>
+    </form>
+</div>

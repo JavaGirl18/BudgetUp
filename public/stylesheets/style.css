@@ -1,10 +1,22 @@
 body {
-  /* padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
-  background-image: url('../images/up.jpg');
+   padding: 50px;
+  font-family: 'Fjalla One', sans-serif;
+
+  background-image: url('../images/up.gif');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+/* .image{
+  background-size: cover;
+} */
 
 a {
-  color: #00B7FF;
+  color:#00463F;
+}
+.main{
+ display: flex;
+ height: 100vh;
+
+
 }

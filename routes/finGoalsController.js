@@ -6,7 +6,7 @@ const FinGoals = require('../models/finGoals')
 
 
 router.get('/', (req, res, next) => {
-    console.log('im here')
+    // console.log('im here')
     User.findById(req.params.userId)
     .then((user) => {
        
@@ -32,7 +32,7 @@ router.get('/new', (req, res) => {
 router.post('/', (req, res) => {
 console.log('trying to create')
   // make goals req.body
-  const goals = new FinGoals(req.body)
+  const goals = new FinGoals(req.body.userId)
 
   // get goals by the id
   User.findById(req.params.userId)
