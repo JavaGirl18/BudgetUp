@@ -1,24 +1,25 @@
+
 <div class='main'>
+   
     <center>
-        <h1>
+        <h1 class='shade'>
             <u>BudgetUp!</u>
+            
         </h1>
     </center>
     <center>
-        <p>Welcome to {{title}}</p>
+        <h4 class='welcome'>Welcome to {{title}}</h4>
     </center>
 
-    <div>
+    <div class='form'>
         <h1>Already a User?</h1>
-    </div>
-    <form>
-
-
+   
+    <form action='/users/'>
         <label for="login">Email</label>
         <input type="text" placeholder="email address" />
         <label for="userPassword">Password: </label>
         <input id="userPassword" type="password" required>
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
 
     </form>
 </div>
