@@ -1,14 +1,15 @@
-<div class ='showUserBack'>
+<div class ='right'>
   <header class='header'>
 
 </header>
 <body>
   <div class='body'>
-<img src={{showUser.pic}} alt={{showUser.name}}>
+<img src={{showUser.pic}} class='circle responsive-img' alt={{showUser.name}}>
 <h3>Name: {{showUser.name}}</h3>
 <p>Email: {{showUser.email}}</p>
- <a href="/users/{{showUser._id}}/budget">Go to Budget</a>
- <a href="/users/{{showUser._id}}/finGoals">Go to Financial Goals</a>
+<div class="center-align" id='butt'>
+ <a href="/users/{{showUser._id}}/budget"><button>Go to Budget</button></a>
+ <a href="/users/{{showUser._id}}/finGoals"><button>Go to Financial Goals</button></a>
 
 <form action="/users/{{showUser._id}}?_method=DELETE" method="POST">
   <button type="submit">Delete Profile</button>
@@ -17,6 +18,8 @@
 
   <a href="{{showUser._id}}/edit"><button>Update User Profile</button></a>
   </div>
+  </div>
   </body>
   <a href="/"><button>Sign Out</button></a>
 </div>
+

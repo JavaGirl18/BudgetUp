@@ -1,11 +1,13 @@
 
 <h1>All Users</h1>
+
+<div class="right" id='index'>
 <ul>
   {{#each users}}
   <li>
     <a href="/users/{{_id}}">
      
-      <img src={{this.pic}} alt={{this.name}} width='200'>
+      <img src={{this.pic}} class ='circle responsive-img' alt={{this.name}} width='200'>
       <p>{{name}}</p>
       <p>{{email}}</p>
       
@@ -14,4 +16,7 @@
   {{/each}}
 </ul>
 
-
+</div>
+ <div class="left" id='man2'>
+  <img src="/images/money.png" alt="">
+</div>
