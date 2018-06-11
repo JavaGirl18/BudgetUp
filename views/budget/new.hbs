@@ -1,3 +1,54 @@
+<div class='right' id='already3'>
+<h4><u>Create New Budget</u></h4>
+
+  <div class="row">
+    <form action="/users/{{userId}}/budget" method="POST" class="col s8">
+      <div class="row">
+        <div class="input-field col s10">
+ 
+         <label for="budgetName">Name</label>
+    <input type="text" name="budgetName.name" placeholder="name your budget" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="expenses" type="text" name='expenses.name'>
+          <label for="expenses.name">Type of Expense</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="amount" type="number" name='expenses.amount' placeholder="enter amount" required>
+          <label for="expenses.amount">Amount of Expense</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <input id="incomeType" type="text" name="income.incomeType" placeholder="income stream">
+          <label for="income.incomeType">Income Stream</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="amount" type="number" name="income.amount" placeholder="income amount">
+          <label for="income.amount">Amount of Income Stream</label>
+        </div>
+      </div>
+       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+ 
+    
+  </div>
+   <div class="left" id='man6'>
+  <img src="/images/money.png" alt="">
+</div>
+
+  
+
+{{!-- 
+
 <h1>Create New Budget</h1>
 
 <form action="/users/{{userId}}/budget" method="POST">
@@ -24,7 +75,7 @@
   
   <button type="submit">Create New Budget</button>
 </form>
-  
+   --}}
   
   {{!-- <textarea 
     type="text" 

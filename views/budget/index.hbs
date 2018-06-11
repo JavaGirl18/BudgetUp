@@ -16,16 +16,18 @@
         <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
             <button type='submit'>Remove Budget</button>
             </a>
-            {{/each}}
+           
         </form>
     </ul>
-
+ {{/each}}
     <a href="budget/new">
         <button>Add new budget</button>
     </a>
-    
+    <a href="/users/{{user._id}}">
+    <button>Go Back</button>
+</a>
 </div>
 
-<div class="left" id='man'>
+<div class="left" id='man5'>
     <img src="/images/money.png" alt="">
 </div>
