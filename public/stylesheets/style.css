@@ -98,15 +98,24 @@ font-style: italic;
   margin-top:90px;
   
 }
+#budget{
+  background-color: rgba(82, 83, 83, 0.4);
+  box-shadow: 0,0,0.5;
+box-shadow: 3px 3px rgba(59, 58, 58, 0), -1em 0 .4em rgb(0, 128, 38);
+margin-top: 100px;
+}
 #butt{
   /* display: flex; */
   justify-content: space-between;
  
 }
+p{
+  color:white;
+}
 button{
   border-radius: 10px;
 }
-h3,h4,h5,h6,h1{
+h3,h4,h5,h6,h1,h2{
   font-family: 'Cormorant Unicase', serif;
 }
 

@@ -1,22 +1,31 @@
-<h1>{{user.name}}'s Budget</h1>
+<div class="right" id='budget'>
+  <h1>{{user.name}}'s Budget</h1>
 
-<ul>
-    {{#each budget}}
-    <li>
-        <h2>{{budgetName.name}}</h2>
-        <p>{{expenses.name}} : {{expenses.amount}}</p>
-        
-        <p>{{income.incomeType}} : {{income.amount}}</p>
-       
-        </a>
-    </li>
-    <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
-   <button type='submit'>Remove Budget</button></a>
-    {{/each}}
-    </form>
-</ul>
+    <ul>
+        {{#each budget}}
+        <li>
+            <h5>
+                <u>{{budgetName.name}}</u>
+            </h5>
+            <p>{{expenses.name}} : {{expenses.amount}}</p>
 
-<a href="budget/new"><button>Add new budget</button></a>
+            <p>{{income.incomeType}} : {{income.amount}}</p>
 
+            </a>
+        </li>
+        <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
+            <button type='submit'>Remove Budget</button>
+            </a>
+            {{/each}}
+        </form>
+    </ul>
 
-   
+    <a href="budget/new">
+        <button>Add new budget</button>
+    </a>
+    
+</div>
+
+<div class="left" id='man'>
+    <img src="/images/money.png" alt="">
+</div>

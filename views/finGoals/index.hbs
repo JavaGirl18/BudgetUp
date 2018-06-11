@@ -1,37 +1,41 @@
-
 <div class="container" id='fingoal'>
-<h3>{{user.name}}'s Financial Goals</h3>
-<img src={{user.pic}} class ='circle responsive-img' alt={{this.name}} width='200'>
-<ul>
-    {{#each financialGoals}}
-    <li>
-        
-        <u><h5>My Goal: {{name}}</h5></u>
-        <p> <span>Goal Amount:</span>{{goalAmount}}</p>
-        <p>Current Amount: {{currentAmount}}</p>
+    <h3>{{user.name}}'s Financial Goals</h3>
+    <img src={{user.pic}} class='circle responsive-img' alt={{this.name}} width='200'>
+    <ul>
+        {{#each financialGoals}}
+        <li>
 
-        <p>Due Date: {{dueDate}}</p>
-        
-        <p>Comments:{{#each comment}}
-            <li class=''>{{body}}
-                <p>Posted on: {{date}}</p>
-            </li> {{/each}}</p>
+            <u>
+                <h5>My Goal: {{name}}</h5>
+            </u>
+            <p>
+                <span>Goal Amount:</span>{{goalAmount}}</p>
+            <p>Current Amount: {{currentAmount}}</p>
 
+            <p>Due Date: {{dueDate}}</p>
+
+            <p>Comments:{{#each comment}}
+                <li class=''>{{body}}
+                    <p>Posted on: {{date}}</p>
+                </li> {{/each}}</p>
+
+            </a>
+        </li>
+        <form action='/users/{{../user._id}}/finGoals/{{_id}}?_method=DELETE' method='POST'>
+            <button type='submit'>Remove Goal</button>
+            </a>
+        </form>
+        <a href="/users/{{../user._id}}/finGoals/{{_id}}/comment/new">
+            <button>Add comment</button>
         </a>
-    </li>
-    <form action='/users/{{../user._id}}/finGoals/{{_id}}?_method=DELETE' method='POST'>
-        <button type='submit'>Remove Goal</button>
-        </a>
-    </form>
-    <a href="/users/{{../user._id}}/finGoals/{{_id}}/comment/new">
-        <button>Add comment</button>
+        {{/each}}
+    </ul>
+
+
+    <a href="finGoals/new">
+        <button>Add new Financial Goal</button>
     </a>
-    {{/each}}
-</ul>
-
-
-<a href="finGoals/new">
-    <button>Add new Financial Goal</button>
-</a>
 </div>
-<a href="/users/{{user._id}}"><button>Go Back</button></a>
+<a href="/users/{{user._id}}">
+    <button>Go Back</button>
+</a>
