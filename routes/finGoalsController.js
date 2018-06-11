@@ -3,6 +3,7 @@ const router = express.Router({mergeParams: true})
 const User = require('../models/user')
 const Budget = require('../models/budget')
 const FinGoals = require('../models/finGoals')
+const Comment = require('../models/comment')
 
 
 router.get('/', (req, res, next) => {
@@ -12,7 +13,7 @@ router.get('/', (req, res, next) => {
        
       res.render('finGoals/index', 
       { user: user,
-        goals: user.goals
+        financialGoals: user.financialGoals
      })
     })
     .catch((err) => res.send(err))
@@ -32,18 +33,16 @@ router.get('/new', (req, res) => {
 router.post('/', (req, res) => {
 console.log('trying to create')
   // make goals req.body
-  const goals = new FinGoals(req.body.userId)
-
+  const financialGoals = new FinGoals(req.body)
+console.log(financialGoals)
   // get goals by the id
   User.findById(req.params.userId)
     .then((user) => {
-        console.log(goals)
+        console.log(user)
+       
       // push new goal
-      user.goals.push(goals)
-console.log(goals)
+      user.financialGoals.push(financialGoals)
       // save new goal
-      .then(()=>{
-
       return user.save()
     //   console.log(user)
     })
@@ -53,7 +52,7 @@ console.log(goals)
       res.redirect(`/users/${req.params.userId}/finGoals`)
     })
 })
-})
+
 // DELETE Route
 // router.delete('/:id', (req, res) => {
 //   console.log(req.params.userId)
@@ -80,5 +79,4 @@ console.log(goals)
 //   })
 // })
 
-module.exports = router
 module.exports = router

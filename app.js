@@ -33,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/users', userController);
 app.use('/users/:userId/budget', budgetController);
 app.use('/users/:userId/finGoals', finGoalsController);
+// app.use('/users/:userId/finGoals/:finGoalsId/comment', commentController);
 
 
 
