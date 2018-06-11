@@ -53,30 +53,29 @@ console.log(financialGoals)
     })
 })
 
-// DELETE Route
-// router.delete('/:id', (req, res) => {
-//   console.log(req.params.userId)
-//   //find user by id by grabing it from the req params
-//   User.findById(req.params.userId)
-//     .then((user) => {
-//       //once id is obtained call it user
-//       user.budget.id(req.params.id).remove()
-//     //take user and match it with the associated budget
-//     //by finding the budget id which is grabbed from req params
-//       return user.save()
-//       //after info is gathered save it to user
-//     })
-//     .then(() => res.redirect(`/users/${req.params.userId}/budget`))
-//     //once user info is saved redirect to users budget page
-//     .catch(err => console.log(err))
-// })
 
-// router.put('/:id', (req,res)=>{
-//  User
-//   .findByIdAndUpdate(req.params._id,req.body, {new:true})
-//   .then(()=>{
-//     res.redirect(`/budget/${req.params.id}`)
-//   })
-// })
+
+
+
+// DELETE Route
+router.delete('/:id', (req, res) => {
+  console.log(req.params.userId)
+  //find user by id by grabing it from the req params
+  User.findById(req.params.userId)
+    .then((user) => {
+      //once id is obtained call it user
+      user.financialGoals.id(req.params.id).remove()
+    //take user and match it with the associated goal
+    //by finding the goal id which is grabbed from req params
+      return user.save()
+      //after info is gathered save it to user
+    })
+    .then(() => res.redirect(`/users/${req.params.userId}/finGoals`))
+    //once user info is saved redirect to users finGoals page
+    .catch(err => console.log(err))
+})
+
+
+
 
 module.exports = router
