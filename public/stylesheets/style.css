@@ -6,10 +6,6 @@ body {
   font-family: 'Fjalla One', sans-serif;
 
   background-image: url('../images/up.png');
-  /* background-size:cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position:absolute; */
-  /* height:auto; */
   margin:0;
   padding:0;
   /* height:100%; */
@@ -109,8 +105,9 @@ margin-left:-1250px;
   background-color: rgba(0, 193, 138, 0.4); 
 }
 #index{
-  background-color: rgba(0, 193, 138, 0.4); 
-  border: solid;
+  background-color:rgba(116, 124, 117, 0.3);
+  display:inline-block;
+  min-height: 50px;
 }
 
 .form{
