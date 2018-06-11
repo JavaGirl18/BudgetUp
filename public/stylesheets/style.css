@@ -66,7 +66,33 @@ font-style: italic;
   border:solid;
   position: relative;
 }
-
+.user{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+#allusers{
+  margin-top:100px;
+  background-color: rgba(7, 105, 78, 0.4);
+  box-shadow: 0,0,0.5;
+  box-shadow: 3px 3px rgba(59, 58, 58, 0), -1em 0 .4em rgb(0, 128, 38);
+  
+}
+.image{
+  height:200px;
+  width:200px;
+  border-radius: 200px;
+  box-shadow: 0,0,0.5;
+  box-shadow: 3px 3px rgba(59, 58, 58, 0), -1em 0 .4em rgb(0, 128, 38);
+}
+#man{
+  position: relative;
+  margin-top:-30px;
+}
+#man3{
+  margin-left:-70px;
+}
 #already{
   background-color: rgba(0, 193, 138, 0.4); 
 color:white;

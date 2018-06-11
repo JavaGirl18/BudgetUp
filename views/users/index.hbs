@@ -1,24 +1,24 @@
 
 
 
-<div class="container" id='index'>
+<div class='center' id='allusers'>
   <h4>Your Household</h4>
-<div class ='peeps2'>
-<ul>
+<div class='user'>
   {{#each users}}
-  <li>
+  
     <a href="/users/{{_id}}">
      
-      <img src={{this.pic}} class ='circle responsive-img' alt={{this.name}} width='200'>
+      <img src={{this.pic}} class ='image' alt={{this.name}}  width='200'>
       <p>{{name}}</p>
       <p>{{email}}</p>
       
     </a>
-  </li>
+  
   {{/each}}
-</ul>
+
 </div>
 </div>
- <div class="left" id='man'>
+
+ {{!-- <div class="left" id='man'>
   <img src="/images/money.png" alt="">
-</div>
+</div> --}}
