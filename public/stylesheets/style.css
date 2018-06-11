@@ -171,8 +171,17 @@ margin-left:-1250px;
   margin-left: 50px;
   background-color: rgba(0, 193, 138, 0.4); 
 }
+.center2{
+  border:solid;
+  background-color: rgb(112, 108, 108,0.5);
+  max-width: 600px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+
+}
 #fingoal{
   background-color: rgba(82, 83, 83, 0.4); 
+  border:solid;
 }
 .form{
   padding:100px;

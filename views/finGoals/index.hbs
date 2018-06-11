@@ -1,4 +1,4 @@
-<div class="right" id='fingoal'>
+<div class="center" id='fingoal'>
     <h3>{{user.name}}'s Financial Goals</h3>
     <img src={{user.pic}} class='circle responsive-img' alt={{this.name}} width='200'>
     <ul>
@@ -8,19 +8,22 @@
             <u>
                 <h5>My Goal: {{name}}</h5>
             </u>
-            <p>
-                <span>Goal Amount:</span>{{goalAmount}}</p>
-            <p>Current Amount: {{currentAmount}}</p>
+           <center> <div class='center2' id='darker'>
+                <p>
+                    <span>Goal Amount:</span>{{goalAmount}}</p>
+                <p>Current Amount: {{currentAmount}}</p>
 
-            <p>Due Date: {{dueDate}}</p>
+                <p>Due Date: {{dueDate}}</p>
 
-            <p>Comments:{{#each comment}}
+                <p>Comments:{{#each comment}}</p>
                 <li class=''>{{body}}
                     <p>Posted on: {{date}}</p>
-                </li> {{/each}}</p>
 
-            </a>
-        </li>
+
+
+                </li>
+            </div></center>
+        </li> {{/each}}</p>
         <form action='/users/{{../user._id}}/finGoals/{{_id}}?_method=DELETE' method='POST'>
             <button type='submit'>Remove Goal</button>
             </a>
@@ -35,7 +38,7 @@
     <a href="finGoals/new">
         <button>Add new Financial Goal</button>
     </a>
+    <a href="/users/{{user._id}}">
+        <button>Go Back</button>
+    </a>
 </div>
-<a href="/users/{{user._id}}">
-    <button>Go Back</button>
-</a>
