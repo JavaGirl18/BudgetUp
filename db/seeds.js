@@ -148,7 +148,7 @@ User.remove()
             name: "Serena",
             email: "serena@court.com",
             password: "xxx",
-            pic: "https://pmcvariety.files.wordpress.com/2018/01/oprah-winfrey-backstage-golden-globes.jpg?w=1000&h=563&crop=1",
+            pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWsxNKs-iiKJiv_VjJ-yz1u1UABkbXo1xtkZL1KMICofFnr-WAXw",
             budget: [budget2],
             financialGoals: [finGoals2]
         })
@@ -157,7 +157,7 @@ User.remove()
             name: "Oprah",
             email: "oprahwin@own.com",
             password: "xxx",
-            pic: "https://pmcvariety.files.wordpress.com/2018/01/oprah-winfrey-backstage-golden-globes.jpg?w=1000&h=563&crop=1",
+            pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJpBK9dfaWOKkuN6CW73_fpnigzr0k16SkZa3G5-pz_OPQ4_8U",
             budget: [budget4],
             financialGoals: [finGoals4],
         })
