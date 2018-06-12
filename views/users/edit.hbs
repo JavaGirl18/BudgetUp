@@ -1,22 +1,31 @@
+<div class="center" id='create'>
 <h1>Edit {{showUser.name}}</h1>
 
 <form action="/users/{{showUser._id}}?_method=PUT" method="POST">
 <div>
-    <label for="pic">Change profile picture</label>
-    <input type="text" name="pic" value='{{showUser.pic}}'>
+   <p>Change profile picture</p> <input type="text" name="pic" value='{{showUser.pic}}'>
 </div>
   <div>
-    <label for="title">Update User Name</label>
-    <input type="text" name="name" value='{{showUser.name}}' />
+  
+   <p>Update User Name</p> <input type="text" name="name" value='{{showUser.name}}' />
   </div>
   <div>
-    <label for="email">Update Email</label>
+   <p>Update Email</p>
     <input type="text" name="email" value='{{showUser.email}}' />
   </div>
   <div>
-    <label for="password">Change Password</label>
-    <input type="text" name="password" value='{{showUser.password}}' />
+<p>Update Password</p>
+    <input type="password" name="password" value='{{showUser.password}}' />
   </div>
-  <div>
-  <button type="submit">Update Profile</button>
+
+
+
+  
+  </div>
+    <center>
+  <button id='movedown' class="btn waves-effect waves-light" type="submit" name="action">Update Profile
+     <i class="material-icons right">send</i>
+  </button>
+</center>
 </form>
+  </div>

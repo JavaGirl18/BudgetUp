@@ -223,6 +223,7 @@ margin-left:-1250px;
   margin: 0 auto;
   border:solid;
   margin-top:50px; 
+  padding:15px;
   
 }
 goal{
@@ -235,4 +236,7 @@ goal{
 #movedown2{
   margin-top:10px;
  float: left;
+}
+::placeholder{
+  color: white;
 }
