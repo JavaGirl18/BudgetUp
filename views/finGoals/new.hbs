@@ -1,43 +1,28 @@
+<div class="center" id='create' >
 <h1>Create New Financial Goal</h1>
+
 
 <form action="/users/{{userId}}/finGoals" method="POST">
   <div>
-    <label for="name">Name your Financial Goal</label>
-    <input type="text" name="name" placeholder="Goal name" />
+  
+   <p>Name of Goal</p> <input type="text" name="name"/>
   </div>
-  <div>
-    <label for="amount">Goal Amount</label>
- <input type="text" name="goalAmount" placeholder="amount of goal" />
+  <div id='right'>
+  
+ <p> Goal Amount</p><input type="text" name="goalAmount"/>
   </div>
-  <div>
-    <label for="currentAmount">Current Amount</label>
-    <input type="number" name="currentAmount" placeholder="current amount" />
+  <div id='right'>
+  
+   <p>Current Amount </p><input type="number" name="currentAmount"/>
   </div>
-    <div>
-    <label for="dueDate">Set Due Date</label>
-    <input type="date" name="dueDate" placeholder="Enter due date" />
-  </div>
-    <div>
-    
+    <div id='right'>
+  
+   <p>Due Date</p> <input type="date" name="dueDate"/>
   </div>
   
-  <button type="submit">Create New Financial Goal</button>
-</form>
-  
-  
-  {{!-- <textarea 
-    type="text" 
-    name="email" 
-    placeholder="Email"></textarea> --}}
-      {{!-- <input type="text" class="datepicker">
-       document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, options);
-  });
+  </div>
+  <center>
+  <button id ='movedown' type="submit">Create New Financial Goal</button>
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
-       --}}
+  </center>
+  </form>

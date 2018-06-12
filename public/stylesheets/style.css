@@ -217,3 +217,18 @@ margin-left:-1250px;
 
   padding:10px;
 }
+#create{
+  background-color: rgba(82, 83, 83, 0.4);
+  width: 1000px;
+  margin: 0 auto;
+  border:solid;
+  margin-top:50px; 
+  
+}
+goal{
+  min-height:
+  200px;
+}
+#movedown{
+  margin-top:10px;
+}
