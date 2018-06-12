@@ -3,7 +3,7 @@
 <div class="center2">
     <ul>
         {{#each budget}}
-        <li>
+        
             <h5>
                 <u>Name of budget</u> : {{budgetName.name}}
             </h5>
@@ -12,15 +12,20 @@
 
             <p>Income Type: {{income.incomeType}} : {{income.amount}}</p>
 
-        </div>
-        </li></div>
+        
+        
         <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
             <button type='submit'>Remove Budget</button>
             </a>
 
         </form>
+   
+    
     </ul>
     {{/each}}
+    </div>
+    </div>
+    
     </center> 
     <a href="budget/new">
         <button>Add new budget</button>
