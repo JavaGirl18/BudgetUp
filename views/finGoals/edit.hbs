@@ -1,0 +1,32 @@
+<div class="center" id='create'>
+<h1>Edit Your Goal</h1>
+
+<form action="/users/{{userId}}/finGoals/{{id}}?_method=PUT" method="POST">
+<div>
+   <p>Goal Name</p> <input type="text" name="name" value='{{finGoal.name}}'>
+</div>
+  <div>
+  
+   <p>Amount of Goal</p> <input type="text" name="goalAmount" value='{{finGoal.goalAmount}}' />
+  </div>
+  <div>
+  
+   <p>Current Amount</p> <input type="text" name="currentAmount" value='{{finGoal.currentAmount}}' />
+  </div>
+  <div>
+   <p>Due Date</p>
+    <input type="Date" name="dueDate" value='{{finGoal.dueDate}}' />
+  </div>
+  
+
+
+
+  
+  </div>
+    <center>
+  <button id='movedown' class="btn waves-effect waves-light" type="submit" name="action">Update Goal
+     <i class="material-icons right">send</i>
+  </button>
+</center>
+</form>
+  </div>

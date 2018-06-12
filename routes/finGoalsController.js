@@ -57,6 +57,39 @@ console.log(financialGoals)
 
 
 
+// EDIT Route
+router.get('/:id/edit', (req, res) => {
+  User
+    .findById(req.params.userId)
+    .then((showUser) => {
+      const userId = req.params.userId
+      const id = req.params.id
+      const finGoal = showUser.financialGoals.id(id)
+      res.render('finGoals/edit', { userId, id, finGoal })
+    })
+})
+
+
+// update
+router.put('/:id', (req, res) => {
+  console.log(req.params.userId)
+
+  User.findById(req.params.userId)
+    .then((user) => {
+     
+     const finGoal= user.financialGoals.id(req.params.id)
+    finGoal.name=req.body.name
+    finGoal.goalAmount=req.body.goalAmount
+    finGoal.currentAmount=req.body.currentAmount
+    finGoal.dueDate=req.body.dueDate
+      return user.save()
+    })
+    .then(() => res.redirect(`/users/${req.params.userId}/finGoals`))
+    .catch(err => console.log(err))
+})
+
+
+
 // DELETE Route
 router.delete('/:id', (req, res) => {
   console.log(req.params.userId)
