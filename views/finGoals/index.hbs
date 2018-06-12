@@ -6,24 +6,26 @@
         <li>
 
             <u>
-                <h5>My Goal</u> : {{name}}</h5>
+             <center>  <h5>My Goal</u> : {{name}}</h5>
+
            
-           <center> <div class='center2' id='darker'>
-                <p>
-                    <span>Goal Amount:</span>{{goalAmount}}</p>
-                <p>Current Amount: {{currentAmount}}</p>
+                <div class='center2' class='darker'>
+                    <p>
+                        <span></span>Goal Amount:</span>{{goalAmount}}</p>
+                    <p>Current Amount: {{currentAmount}}</p>
 
-                <p>Due Date: {{dueDate}}</p>
+                    <p>Due Date: {{dueDate}}</p>
+                   
+                        <p>Comments:{{#each comment}}</p>
+                        <li class=''>{{body}}
+                            <p>Posted on: {{date}}</p>
+                 
 
-                <p>Comments:{{#each comment}}</p>
-                <li class=''>{{body}}
-                    <p>Posted on: {{date}}</p>
 
-
-
-                </li>
-            </div>
-        </li> {{/each}}</p></center>
+                    </li>
+               
+        </li> {{/each}}</p>
+        </center> 
         <form action='/users/{{../user._id}}/finGoals/{{_id}}?_method=DELETE' method='POST'>
             <button class='but' type='submit'>Remove Goal</button>
             </a>
@@ -34,7 +36,7 @@
         {{/each}}
     </ul>
 
-
+</div>
     <a href="finGoals/new">
         <button>Add new Financial Goal</button>
     </a>
