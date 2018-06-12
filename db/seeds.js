@@ -152,17 +152,10 @@ User.remove()
             budget: [budget2],
             financialGoals: [finGoals2]
         })
-        const user4 = new User({
-            name: "Jamie",
-            email: "jamie@coffee.com",
-            password: "xxx",
-            pic: "https://media.licdn.com/dms/image/C4D03AQGkcx6zbf2JDA/profile-displayphoto-shrink_800_800/0?e=1534377600&v=beta&t=3WjN8_hvkiKfY3pGuJO5rI5L6bpzQARcota_jpEN7eg",
-            budget: [budget2],
-            financialGoals: [finGoals2]
-        })
+     
         
 
-        const user5 = new User({
+        const user4 = new User({
             name: "Oprah",
             email: "oprahwin@own.com",
             password: "xxx",
@@ -171,7 +164,7 @@ User.remove()
             financialGoals: [finGoals4],
         })
 
-        const users = [user1, user2, user3, user4, user5]
+        const users = [user1, user2, user3, user4]
 
 
         // save test data
