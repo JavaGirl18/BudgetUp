@@ -198,6 +198,7 @@ margin-left:-1250px;
 #fingoal{
   background-color: rgba(82, 83, 83, 0.4); 
   border:solid;
+  margin: 0 auto;
 }
 .form{
   padding:100px;

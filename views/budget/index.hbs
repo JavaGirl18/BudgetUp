@@ -1,18 +1,19 @@
 <div class="center" id='fingoal'>
-    <h1>{{user.name}}'s Budget</h1>
-
+  <center> <h1>{{user.name}}'s Budget</h1>
+<div class="center2">
     <ul>
         {{#each budget}}
         <li>
             <h5>
-                <u>Name of budget</u> : {{budgetName.name}}</u>
+                <u>Name of budget</u> : {{budgetName.name}}
             </h5>
-            <u>Name of Expense</u> : {{expenses.name}} : {{expenses.amount}}</p>
 
-            <p>Name of budget{{income.incomeType}} : {{income.amount}}</p>
+            <p>Name of Expense: {{expenses.name}} : {{expenses.amount}}</p>
 
-            </a>
-        </li>
+            <p>Income Type: {{income.incomeType}} : {{income.amount}}</p>
+
+        </div>
+        </li></div>
         <form action='/users/{{../user._id}}/budget/{{_id}}?_method=DELETE' method='POST'>
             <button type='submit'>Remove Budget</button>
             </a>
@@ -20,13 +21,14 @@
         </form>
     </ul>
     {{/each}}
+    </center> 
     <a href="budget/new">
         <button>Add new budget</button>
     </a>
     <a href="/users/{{user._id}}">
         <button>Go Back</button>
     </a>
-</div>
+
 
 {{!--
 <div class="left" id='man5'>
