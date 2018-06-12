@@ -9,6 +9,7 @@ const Comment = require('../models/comment')
 router.get('/new', (req, res, next) => {
    
       res.render('comment/new',{
+        
     userId: req.params.userId,
     finGoalsId:req.params.finGoalsId
       })
@@ -23,6 +24,7 @@ router.post('/', (req, res) => {
       const comment = new Comment(req.body)
       User.findById(userId)
         .then((user) => {
+          //take that same user, grab the financial goals from goals schema by id and push new comment
           user.financialGoals.id(finGoalId).comment.push(comment)
           return user.save()
   
