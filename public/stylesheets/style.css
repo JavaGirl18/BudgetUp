@@ -126,8 +126,24 @@ button{
 }
 h3,h4,h5,h6,h1,h2{
   font-family: 'Cormorant Unicase', serif;
-}
+  font-weight: bolder;
+ 
 
+}
+.pic{
+  border: solid;
+  border-radius: 20px;
+}
+.but{
+  margin-top:5px;
+}
+#gb{
+  margin-left:10px;
+}
+.gb{
+  margin-left:10px;
+  margin-top:10px;
+}
 #already{
   background-color: rgba(0, 193, 138, 0.4); 
 color:white;

@@ -6,8 +6,8 @@
         <li>
 
             <u>
-                <h5>My Goal: {{name}}</h5>
-            </u>
+                <h5>My Goal</u> : {{name}}</h5>
+           
            <center> <div class='center2' id='darker'>
                 <p>
                     <span>Goal Amount:</span>{{goalAmount}}</p>
@@ -22,14 +22,14 @@
 
 
                 </li>
-            </div></center>
-        </li> {{/each}}</p>
+            </div>
+        </li> {{/each}}</p></center>
         <form action='/users/{{../user._id}}/finGoals/{{_id}}?_method=DELETE' method='POST'>
-            <button type='submit'>Remove Goal</button>
+            <button class='but' type='submit'>Remove Goal</button>
             </a>
         </form>
         <a href="/users/{{../user._id}}/finGoals/{{_id}}/comment/new">
-            <button>Add comment</button>
+            <button class='but'>Add comment</button>
         </a>
         {{/each}}
     </ul>
